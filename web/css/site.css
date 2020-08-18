@@ -1,0 +1,306 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,900);
+
+html,
+body {
+    height: 100%;
+	background: rgb(149,199,20);
+	background: linear-gradient(90deg, rgba(149,199,20,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+body {
+    font-family:"Nunito", sans-serif;
+}
+
+* {
+	/* border-radius: 0px !important; */
+}
+
+/*
+ * remove href values when printing in Chrome
+ */
+@media print {
+	a[href]:after {
+		content: none !important;
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.navbar-brand > img {
+    max-width: 50px;
+}
+
+.logo {
+    margin-top: -15px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.courseText {
+	float: left;
+	max-width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-right: 5px;
+}
+
+.batchText {
+	float: left;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+/**************************************************
+		Custom Styles
+***************************************************/
+
+.card{
+	border-radius: 4px;
+	background: #fff;
+	box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+	transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+	padding: 14px 80px 18px 36px;
+	cursor: pointer;
+}
+
+.card:hover{
+	transform: scale(1.05);
+	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card h3{
+	font-weight: 600;
+}
+
+.card img{
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	max-height: 120px;
+}
+
+.card-1{
+	background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 80px;
+}
+
+.card-2{
+	background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 80px;
+}
+
+.card-3{
+	background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 80px;
+}
+
+@media(max-width: 990px){
+	.card{
+		margin-bottom: 20px;
+	}
+}
+
+.home-cards {
+}
+
+.home-panels {
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	vertical-align: middle;
+}
+
+.box{
+    /* padding: 60px 0px; */
+}
+
+.box-part{
+    background: #FFF;
+    border-radius: 10px;
+    padding: 30px 10px;
+    margin: 30px 0px;
+}
+
+.text{
+    margin: 20px 0px;
+}
+
+.fa{
+     color: #4183D7;
+}
+
+.btn-round {
+	border-radius: 17px;
+}
+
+.buttons-wrap {
+	display: -ms-flexbox!important;
+	display: flex!important;
+	flex-direction: column;
+	-ms-flex-align: center!important;
+	align-items: center!important;
+	justify-content: space-arround;
+	align-items: flex-start;
+}
+
+.buttons-wrap .btn {
+	margin-bottom: 15px;
+}
+
+/* PACE Theme */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #ffffff;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}
+
+
+#subjects .subject{
+    background: #FFF;
+    border-radius: 5px;
+    padding: 15px 10px;
+    margin: 10px 0px;
+}
+
+#subjects .button {
+	margin-top: 15px;
+	margin-right: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
