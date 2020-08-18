@@ -11,7 +11,7 @@ Composed by:
 
 Awake simply lets the faculty to record the presence of attendee students without standing in the way of teaching.
 
-## Features
+### Features
 
 + Faculty Login
 + Faculty Registration
@@ -20,14 +20,14 @@ Awake simply lets the faculty to record the presence of attendee students withou
 + Assign Subjects (Admin)
 + User Management (Admin)
 
-## Demo
+### Demo
 
 Coming soon.
 
-## Installation
+### Installation
 
 Refer to the detailed documentation [here](https://www.yiiframework.com/doc/guide/2.0/en/start-installation) at Yii website.
 
-## License
+### License
 
 [@license](LICENSE)
